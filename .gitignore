@@ -1,3 +1,9 @@
+# Not important for now
+.terraform.lock.hcl
+
+# Might contain secrets
+.env
+
 # Local .terraform directories
 **/.terraform/*
 
