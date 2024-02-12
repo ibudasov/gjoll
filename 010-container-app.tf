@@ -1,16 +1,3 @@
-resource "azurerm_resource_group" "default" {
-  name     = "${var.APP}-resource-group"
-  location = "West Europe"
-}
-
-resource "azurerm_log_analytics_workspace" "default" {
-  name                = "${var.APP}-logs"
-  location            = azurerm_resource_group.default.location
-  resource_group_name = azurerm_resource_group.default.name
-  sku                 = "PerGB2018"
-  retention_in_days   = 30
-}
-
 resource "azurerm_container_app_environment" "default" {
   name                       = "${var.APP}-app-environment"
   location                   = azurerm_resource_group.default.location
@@ -23,12 +10,12 @@ resource "azurerm_container_app" "default" {
   resource_group_name          = azurerm_resource_group.default.name
   revision_mode                = "Single"
 
- ingress {
-    target_port  = 80 # Container port to receive traffic
-    external_enabled = true # Allow external access
-    transport    = "http" # Optional, transport protocol (http, http2, tcp)
+  ingress {
+    target_port      = 80     # Container port to receive traffic
+    external_enabled = true   # Allow external access
+    transport        = "http" # Optional, transport protocol (http, http2, tcp)
     traffic_weight {
-      percentage = 100
+      percentage      = 100
       latest_revision = true
     }
   }

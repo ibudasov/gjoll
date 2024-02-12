@@ -1,5 +1,5 @@
 variable "APP" {
-  type = string
+  type    = string
   default = "gjoll"
 }
 
