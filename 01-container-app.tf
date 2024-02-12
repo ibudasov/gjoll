@@ -23,6 +23,16 @@ resource "azurerm_container_app" "default" {
   resource_group_name          = azurerm_resource_group.default.name
   revision_mode                = "Single"
 
+ ingress {
+    target_port  = 80 # Container port to receive traffic
+    external_enabled = true # Allow external access
+    transport    = "http" # Optional, transport protocol (http, http2, tcp)
+    traffic_weight {
+      percentage = 100
+      latest_revision = true
+    }
+  }
+
   template {
     container {
       name   = "${var.APP}-container-app"
