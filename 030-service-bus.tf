@@ -6,6 +6,7 @@ resource "azurerm_servicebus_namespace" "default" {
 }
 
 resource "azurerm_servicebus_queue" "default" {
+  # https://www.youtube.com/watch?v=LM7DByKOHBs
   name         = "${var.APP}-servicebus-queue"
   namespace_id = azurerm_servicebus_namespace.default.id
   enable_partitioning = true
