@@ -1,0 +1,288 @@
+<mxfile host="65bd71144e">
+    <diagram id="QzyHxclss05kY6OfOtRP" name="Page-1">
+        <mxGraphModel dx="1299" dy="1857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="16" style="edgeStyle=none;html=1;" edge="1" parent="1" source="28" target="29">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="170.0000000000001" as="sourcePoint"/>
+                        <mxPoint x="430" y="170.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="EventHub trigger" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="16">
+                    <mxGeometry x="0.2538" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-21" y="-8" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;" edge="1" parent="1" source="32" target="30">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="870" y="170.0000000000001" as="sourcePoint"/>
+                        <mxPoint x="787" y="170.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="subscribe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="20">
+                    <mxGeometry x="-0.0552" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;" edge="1" parent="1" source="32" target="33">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="960" y="160.0000000000001" as="sourcePoint"/>
+                        <mxPoint x="1080" y="160.63559322033905" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="documents" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="25">
+                    <mxGeometry x="-0.2436" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;" edge="1" parent="1" source="32" target="38">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="960" y="187.27272727272748" as="sourcePoint"/>
+                        <mxPoint x="1051" y="216.304347826087" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="126" value="transactions" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="27">
+                    <mxGeometry x="-0.2856" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;" edge="1" parent="1" source="29" target="30">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="480" y="170.0000000000001" as="sourcePoint"/>
+                        <mxPoint x="757" y="170.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="Service Bus Output binding" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="18">
+                    <mxGeometry x="0.3268" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-44" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" style="edgeStyle=none;html=1;" edge="1" parent="1" source="28" target="41">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="PULL delivery" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="66">
+                    <mxGeometry x="-0.1454" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="&lt;span style=&quot;background-color: rgb(251, 251, 251);&quot;&gt;EventHub&lt;/span&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/analytics/Event_Hub_Clusters.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="145" width="64" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Function Apps" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="140" width="68" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Service Bus" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Service_Bus.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="145" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Function Apps" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="840" y="135" width="68" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Cosmos" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="60" width="64" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" style="edgeStyle=none;html=1;" edge="1" parent="1" source="37" target="57">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="PUSH" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="62">
+                    <mxGeometry x="-0.0813" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="69" style="edgeStyle=none;html=1;" edge="1" parent="1" source="37" target="55">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="⛔️ cannot subscribe directly" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="69">
+                    <mxGeometry x="0.2783" y="-1" relative="1" as="geometry">
+                        <mxPoint x="50" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="Event Grid" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/integration/Event_Grid_Domains.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="436.28999999999996" width="67" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Postgres" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_partition_2.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="1007" y="180" width="50" height="37" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/user.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="145" width="18.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Option 1&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;div style=&quot;color: rgb(59, 59, 59); background-color: rgb(255, 255, 255); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;Directly sending ingested data for processing to ServiceBus&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="-10" width="640" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" style="edgeStyle=none;html=1;" edge="1" parent="1" source="58" target="57">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="840" y="465.2900000000001" as="sourcePoint"/>
+                        <mxPoint x="757" y="465.2900000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="subscribe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="48">
+                    <mxGeometry x="-0.0552" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" style="edgeStyle=none;html=1;" edge="1" parent="1" source="58" target="64">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="960" y="465.2900000000001" as="sourcePoint"/>
+                        <mxPoint x="1051" y="399.99813397129174" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="documents" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="50">
+                    <mxGeometry x="-0.2436" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=none;html=1;" edge="1" parent="1" source="58" target="59">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="960" y="492.56272727272744" as="sourcePoint"/>
+                        <mxPoint x="1051" y="521.594347826087" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="73" value="transactions" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="52">
+                    <mxGeometry x="-0.1153" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="68" value="PULL delivery" style="edgeStyle=none;html=1;entryX=0.541;entryY=0.52;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="55" target="60">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="triggered" style="edgeStyle=none;html=1;" edge="1" parent="1" source="55" target="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="triggered" style="edgeStyle=none;html=1;" edge="1" parent="1" source="55" target="75">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;span style=&quot;background-color: rgb(251, 251, 251);&quot;&gt;EventHub&lt;/span&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/analytics/Event_Hub_Clusters.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="440.28999999999996" width="64" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="Service Bus" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Service_Bus.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="440.28999999999996" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="Function Apps" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="840" y="436.28999999999996" width="68" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="Postgres" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_partition_2.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="1014" y="500.28999999999996" width="50" height="37" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/user.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="440.28999999999996" width="18.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;h1&gt;Option 2&lt;/h1&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); line-height: 18px;&quot;&gt;&lt;div style=&quot;color: rgb(59, 59, 59); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;Preprocessing ingested data with FunctionsApp and EventGrid before sending to processing with ServiceBus. Might be useful for large amounts of diverse data, which would need map/reduce, filtering and routing.&lt;/div&gt;&lt;div style=&quot;color: rgb(59, 59, 59); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;he problem here is in the FunctionApp between EventHub and EventGrid. If the amount of data is really large, it will cost a lot&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Menlo, Monaco, Courier New, monospace&quot; color=&quot;#3b3b3b&quot;&gt;https://learn.microsoft.com/en-us/azure/event-grid/handler-service-bus&amp;nbsp;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="240" width="620" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="Cosmos" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="371.29" width="64" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="send event" style="edgeStyle=none;html=1;" edge="1" parent="1" source="75" target="37">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="Function Apps" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="346" y="596.71" width="68" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="send event" style="edgeStyle=none;html=1;" edge="1" parent="1" source="76" target="37">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="Logic Apps" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/internet_of_things/Logic_Apps.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="346" y="483.5" width="68" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="Event Grid" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/integration/Event_Grid_Domains.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="187" y="869" width="67" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="subscribe" style="edgeStyle=none;html=1;" edge="1" parent="1" source="96" target="86">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" style="edgeStyle=none;html=1;" edge="1" parent="1" source="96" target="123">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="&lt;span style=&quot;background-color: rgb(251, 251, 251);&quot;&gt;EventHub&lt;/span&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/analytics/Event_Hub_Clusters.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="382" y="874" width="64" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="send events" style="edgeStyle=none;html=1;" edge="1" parent="1" source="100" target="86">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/user.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="879" width="18.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" style="edgeStyle=none;html=1;" edge="1" parent="1" target="117" source="96">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="446" y="910.8778625954199" as="sourcePoint"/>
+                        <mxPoint x="572" y="910.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="109" value="EventHub trigger" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="108">
+                    <mxGeometry x="0.2538" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-21" y="-8" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="110" style="edgeStyle=none;html=1;" edge="1" parent="1" source="119" target="118">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="997" y="900.0000000000001" as="sourcePoint"/>
+                        <mxPoint x="914" y="900.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="111" value="subscribe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="110">
+                    <mxGeometry x="-0.0552" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="112" style="edgeStyle=none;html=1;" edge="1" parent="1" source="119" target="120">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1087" y="890.0000000000001" as="sourcePoint"/>
+                        <mxPoint x="1207" y="890.635593220339" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="113" value="documents" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="112">
+                    <mxGeometry x="-0.2436" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="114" style="edgeStyle=none;html=1;" edge="1" parent="1" source="119" target="121">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1087" y="917.2727272727275" as="sourcePoint"/>
+                        <mxPoint x="1178" y="946.304347826087" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="127" value="transactions" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="114">
+                    <mxGeometry x="-0.1808" y="3" relative="1" as="geometry">
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="115" style="edgeStyle=none;html=1;" edge="1" parent="1" source="117" target="118">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="620" y="900.0000000000001" as="sourcePoint"/>
+                        <mxPoint x="897" y="900.0000000000001" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="116" value="Service Bus Output binding" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="115">
+                    <mxGeometry x="0.3268" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-44" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="117" value="Function Apps" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="819" width="68" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="Service Bus&amp;nbsp;" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Service_Bus.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="827" y="875" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="Function Apps" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="967" y="865" width="68" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="Cosmos" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="1127" y="790" width="64" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="Postgres" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/database_partition_2.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="1134" y="910" width="50" height="37" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="&lt;h1&gt;Option 3&lt;/h1&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255); line-height: 18px;&quot;&gt;&lt;div style=&quot;color: rgb(59, 59, 59); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;Exposing EventGrid to the Internet and keeping EventHub behind it to get rid of FunctionApp in Option2&lt;/div&gt;&lt;div style=&quot;color: rgb(59, 59, 59); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;However, we still would need a FunctionApp to send data to processing at ServiceBus&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="680" width="620" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" style="edgeStyle=none;html=1;" edge="1" parent="1" source="123" target="118">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="Logic Apps" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/internet_of_things/Logic_Apps.svg;fillColor=#CCCCCC;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="910" width="68" height="68" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
