@@ -2,26 +2,37 @@ import azure.functions as func
 import datetime
 import json
 import logging
+from azure.core.credentials import AzureKeyCredential
+from azure.eventgrid import EventGridPublisherClient, EventGridEvent
+
 
 app = func.FunctionApp()
 
-@app.route(route="EventHubFunc", auth_level=func.AuthLevel.ANONYMOUS)
-def EventHubFunc(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
+# @app.route(route="EventHubFunc", auth_level=func.AuthLevel.ANONYMOUS)
+def EventHubFunc(event: func.EventHubEvent):
+    logging.info('Python EventHub trigger function processed an event: %s',
+            event.get_body().decode('utf-8'))
 
-    name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
+    # Event Grid topic endpoint
+    endpoint = "<event-grid-topic-endpoint>"
+    # Event Grid topic key
+    key = "<event-grid-topic-key>"
 
-    if name:
-        return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
-    else:
-        return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
-             status_code=200
-        )
+    # Create a publisher client
+    credential = AzureKeyCredential(key)
+    client = EventGridPublisherClient(endpoint, credential)
+
+    # Create an Event Grid Event
+    event_grid_event = EventGridEvent(
+        subject="EventHub/Event",
+        data={
+        "message": event.get_body().decode('utf-8')
+        },
+        event_type="RecordInserted",
+        data_version="1.0"
+    )
+
+    # Send the event
+    client.send_events([event_grid_event])
+
+    logging.info('Event sent to Event Grid.')
